@@ -8,3 +8,7 @@ function showActiveTasks() {
           }
     });
 }
+
+
+const taskCompleted=document.getElementById("clear");
+taskCompleted.addEventListener("click",clean);
