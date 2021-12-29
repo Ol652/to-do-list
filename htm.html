@@ -1,63 +1,99 @@
-<div class="image">
-    <img src="to.jpg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-</div>
-<div class="continer">
-   <div class="ha">
-   <div class="hader">
-  <header>T O D O</header>
-  </div>
-  <div class="sun">
+ <!--<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">--> 
+  <link rel="stylesheet" href="st.css">
   
-  <img onclick="mode()" src="s.png">
-   
-  </div>
-   </div>
-   <div class="create">
-      <div class="mark-box"> 
-          <div class="mark"></div>
-      </div>
-      <form id="new-task-form">
-   <input type="text" name="new-task-input" id="new-task-input"  class="write" placeholder="Create a new todo..."/>
-   <input type="submit" id="new-task-submit"  value="Add task" />
-   </form>
-   
-  </div>
-
-  <div  class="list-box" >
-    <div class="list-item">
-<!-- <div class="list">
-    <div class="mark-box">
-        <div  class="mark"></div>
+  <title>ToDoList</title>
+</head>
+<body class="theme-dark">
+  <header class="flex-row">
+    <h1>TODO</h1>
+    <div class="theme-block">
+      <input type="checkbox" name="theme" id="theme">
+      <label for="theme"></label>
     </div>
-    <div class="list-text">hgbhk,jnk</div>
- </div>
+  </header>
 
-<div class="list">
-    <div class="mark-box">
-         <div  class="mark"></div>
-     </div>
-     <div class="list-text">hgbhjhj</div>
-  </div>-->
-</div>
-
-  <div class="op">
-      <div class="item-no">
-        <p id="task-left-count"> 5 items left</p>
-     </div>
-     <div class="item-op">
-         <span class="all">All</span>
-         <span onclick="showActiveTasks()">Active</span>
-         <span>Completed</span>
-     </div>
-     <div class="clear">
-         <span>Clear Completed</span>
-     </div>
+  <main>
+    <div class="add-new-item flex-row">
+      <span></span>
+      <input type="text" placeholder="Create a new todo..." name="addItem" id="addItem">
+    </div>
+    <section class="content">
+      <ul>
+        <li class="flex-row">
+          <label class="list-item">
+            <input type="checkbox" name="todoItem" checked>
+            <span class="checkmark"></span>
+            <span class="text">Tex 1</span>
+          </label>
+          <span class="remove"></span>
+        </li>
+        <li class="flex-row">
+          <label class="list-item">
+            <input type="checkbox" name="todoItem">
+            <span class="checkmark"></span>
+            <span class="text">Text 2</span>
+          </label>
+          <span class="remove"></span>
+        </li>
+        <li class="flex-row">
+          <label class="list-item">
+            <input type="checkbox" name="todoItem">
+            <span class="checkmark"></span>
+            <span class="text">Text 2</span>
+          </label>
+          <span class="remove"></span>
+        </li>
+        <li class="flex-row">
+          <label class="list-item">
+            <input type="checkbox" name="todoItem">
+            <span class="checkmark"></span>
+            <span class="text">Text 2</span>
+          </label>
+          <span class="remove"></span>
+        </li>
+        <li class="flex-row">
+          <label class="list-item">
+            <input type="checkbox" name="todoItem">
+            <span class="checkmark"></span>
+            <span class="text">Text 2</span>
+          </label>
+          <span class="remove"></span>
+        </li>
+        <li class="flex-row">
+          <label class="list-item">
+            <input type="checkbox" name="todoItem">
+            <span class="checkmark"></span>
+            <span class="text">Text 3</span>
+          </label>
+          <span class="remove"></span>
+        </li>
+      </ul>
+    </section>
+    <div class="bottom-items flex-row">
+      <div class="items-left"><span>2</span> items left</div>
+      <div class="filter flex-row">
+        <label>
+          <input type="radio" name="filter" id="all" checked>
+          <span>All</span>
+        </label>
+        <label>
+          <input type="radio" name="filter" id="active">
+          <span>Active</span>
+        </label>
+        <label>
+          <input type="radio" name="filter" id="completed">
+          <span>Completed</span>
+        </label>
       </div>
- 
-  </div>
-  <div class="text">
-     <p> Drag and drop to reorder list</p>
- </div>
-</div>
-</div>
+      <span class="clear">Clear Completed</span>
+    </div>
+  </main>
+  <script src="j.js"></script>
+</body>
+</html>
