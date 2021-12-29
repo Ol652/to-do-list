@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const theme = document.getElementById('theme');
 const newItemInput = document.getElementById('addItem');
 const todoList = document.querySelector('.content ul');
@@ -98,6 +97,3 @@ function filterTodoItems(id) {
             break;
     }
 }
-=======
-
->>>>>>> 20f0ca622e3f3e79c0ceea4e50e78d26acd0a0c4
